@@ -1,7 +1,9 @@
-define(function() {
+define(['handlebars', 'app/lib/chaos'], function(Handlebars, chaos) {
+  var template = Handlebars.compile('<h1>Hello {{name}}!</h1>');
   return {
     start: function() {
-      document.body.innerHTML = '<h1>Hello World!</h1>';
+      chaos(0.2);
+      document.body.innerHTML = template({ name: 'CascadiaJS' });
     }
   }
 });
