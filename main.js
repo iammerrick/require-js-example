@@ -1,6 +1,7 @@
 requirejs.config({
   paths: {
-    'handlebars' : 'vendor/handlebars-1.0.rc.1'
+    'handlebars' : 'vendor/handlebars-1.0.rc.1',
+    'text' : 'vendor/text'
   },
   
   shim: {
